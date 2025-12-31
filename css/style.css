@@ -187,7 +187,7 @@ header .test h1 {
         margin: 0;
     }
     .landing-page .text h1 {
-        font-size: 39px;
+        font-size: 35px;
     }
     .landing-page .text h2 {
         margin-top: 5px;
@@ -199,6 +199,7 @@ header .test h1 {
         flex-direction: column;
     }
 }
+<<<<<<< HEAD
 /* About Section */
 .about {
     width: 100%;
@@ -246,3 +247,5 @@ header .test h1 {
         margin-top: 20px;
     }
 }
+=======
+>>>>>>> 1858b1a7979b086eaa204c9c15a2fde07bcbd842
