@@ -125,6 +125,7 @@ header .test h1 {
     align-items: center;
     margin: 20px;
     padding: 10px;
+    z-index: 1;
 }
 .landing-page .text h1 {
     font-size: 60px;
@@ -145,7 +146,13 @@ header .test h1 {
 }
 
 .landing-page .img img {
-    width: 1000px;
+    width: 1000px
+}
+.landing-page .img video {
+    width: 100%;
+    position: absolute;
+    top: 110px;
+    left: 0;
 }
 @media (max-width: 900px) {
     .landing-page .img img {
@@ -165,6 +172,7 @@ header .test h1 {
     width: 80%;
     color: white;
     opacity: .8;
+
 }
 .landing-page .op .power {
     display: flex;
@@ -246,5 +254,11 @@ header .test h1 {
     .about .img {
         margin-top: 20px;
     }
+}
+/* Gallery */
+.carousel-inner {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
 }
 
