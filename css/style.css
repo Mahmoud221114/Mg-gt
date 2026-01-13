@@ -261,4 +261,121 @@ header .test h1 {
     justify-content: space-around;
     display: flex;
 }
-
+/* Contact Section */
+.contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contact .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px) { 
+    .contact {
+        position: relative;
+        top: 340px;
+    }
+}
+.contact .content form {
+    flex-basis: 70%;
+}
+.contact .content form .main-input {
+    padding: 20px;
+    display: block;
+    border: 1px solid var(--f--color);
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #114f6fbd;
+}
+.contact .content form .main-input:focus {
+    outline: none;
+}
+.contact .content form textarea.main-input {
+    height: 200px;
+}
+.contact .content form input[type="submit"] {
+    background-color: var(--f-color);
+    color: white;
+    padding: 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s;
+}
+.contact .content form input[type="submit"]:hover {
+    box-shadow: 0 0 13px 0px var(--f--color)
+}
+.contact .content .info {
+    flex-basis: 25%;
+}
+@media (max-width: 767px) {
+    .contact .content .info {
+        order: -1;
+        text-align: center;
+    }
+}
+.contact .content .info h4 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.contact .content .info .phone {
+    display: block;
+    color: var(--f--color);
+    margin-bottom: 10px;
+}
+.contact .content .info h4:nth-of-type(2) {
+    margin-top: 90px;
+}
+@media (max-width: 767px) {
+    .contact .content .info h4:nth-of-type(2) {
+        margin-top: 30px;
+    }
+}
+.contact .content .info address {
+    color: var(--f--color);
+    line-height: 2;
+}
+@media (max-width: 767px) {
+    .contact .content .info address {
+        margin-bottom: 40px;
+    }
+}
+/* Footer Section */    
+footer {
+    background-color: var(--f-color);
+    color: white;
+    opacity: .8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+footer a {
+    color: var(--f-color);
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 767px) {
+    footer {
+        position: relative;
+        width: 100%;
+        bottom: -320px;
+    }
+}
+/* End Footer Section */
